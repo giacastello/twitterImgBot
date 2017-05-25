@@ -1,40 +1,39 @@
 # Replace where appropriate with your own settings.
 
 [Twitter]
-api_key =
-secret_key =
-token =
-secret_token =
+api_key = zW6F1gbOK2uOCNPB5D51FiynH
+secret_key = 2Ax1tyJ7CZdwl08CVsnNwhfBohIattmO8mU0VRreVlQP3x6QtD
+token = 858831929289969664-D7iTQC0Bj2oz4ZTg7Q375wMDY0QVkXt
+secret_token = QMHA2p6KPB49GX4txsoiFPvGYHJ6hYjbFaW0Zi6W9xQcx
 
 [App]
-image_folder = 
-execution_chance = 
-allow_repeat_after = 
-log_file = 
-bot_account = 
-master_account = 
-dont_tweet_file = 
+image_folder = /Users/silviaportalanza/Code/twitterImgBot/images
+execution_chance = 0
+allow_repeat_after = 1
+log_file = /Users/silviaportalanza/Code/twitterImgBot/logs/log
+bot_account = @storytool
+master_account = @storytool
+dont_tweet_file = '/dev/null'
 
 [Orders]
 #caps agnostic
-ban_command = 
-request_command = 
-time_tolerance = 
+ban_command = adasdasddsadnansdasnasdnasdnasdnasdnadsn
+request_command = @storytool #prompt
+time_tolerance = 1000000
 
 [Texts]
 # Respect indentation: it is TWO spaces
 # tweet_post_number is either True or False, nothing else
 # tweet this text doesn't requiere "" or '', just write the text
 tweet_post_number = True
-tweet_this_text =  
+tweet_this_text =
 
-request_answers = answer1
-  answer2
-  answer3
-  ...
-  answerN
-request_to_third_answers = answer1
-  answer2
-  ...
-  answerN
-
+request_answers = Here is your prompt, sexy.
+#  answer2
+#  answer3
+#  ...
+#  answerN
+request_to_third_answers = here is liitle help from your friend
+#  answer2
+#  ...
+#  answerN

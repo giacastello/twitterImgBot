@@ -105,6 +105,7 @@ def orders():
     master_mentions = requests.master_mentions(mentions, log, master_account)
     relevant_mentions = requests.relevant_mentions(mentions, log, time)
 
+
     for tweet in relevant_mentions:
         if requests.is_img_request(tweet, config.request_command):
             if requests.mentions_third_user(tweet):

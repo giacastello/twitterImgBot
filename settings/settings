@@ -7,10 +7,10 @@ token = 858831929289969664-D7iTQC0Bj2oz4ZTg7Q375wMDY0QVkXt
 secret_token = QMHA2p6KPB49GX4txsoiFPvGYHJ6hYjbFaW0Zi6W9xQcx
 
 [App]
-image_folder = 'images'
+image_folder = /Users/silviaportalanza/Code/twitterImgBot/images
 execution_chance = 0
 allow_repeat_after = 1
-log_file = 'logs/log'
+log_file = /Users/silviaportalanza/Code/twitterImgBot/logs/log
 bot_account = @storytool
 master_account = @storytool
 dont_tweet_file = '/dev/null'

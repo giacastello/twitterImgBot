@@ -1,4 +1,4 @@
-#!/Users/silviaportalanza/Code/twitterImgBot/envname/bin/python3
+#!/envname/bin/python3
 
 # -*- coding: utf-8 -*-
 import re

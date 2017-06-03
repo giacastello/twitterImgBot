@@ -28,7 +28,7 @@ time_tolerance = 1000000
 tweet_post_number = True
 tweet_this_text =
 
-request_answers = Here is your prompt, sexy.
+request_answers = Aquí tienes tu pista.
 #  answer2
 #  answer3
 #  ...

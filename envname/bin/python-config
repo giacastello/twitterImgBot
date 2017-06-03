@@ -1,4 +1,4 @@
-#!/Users/silviaportalanza/Code/twitterImgBot/envname/bin/python
+#!/envname/bin/python
 
 import sys
 import getopt

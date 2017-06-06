@@ -15,7 +15,7 @@ token = twitter_config['token']
 secret_token = twitter_config['secret_token']
 
 app_config = config['App']
-source_folder = app_config['image_folder']
+source_folder = 'images'
 master_account = app_config['master_account']
 bot_account = app_config['bot_account']
 log_file = "logs/log"

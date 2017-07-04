@@ -33,6 +33,7 @@ class Tweet():
         tolerance = -1*(tolerance)
         if not os.path.isfile(log_file):
             # if the file doesn't exist just don't bother
+            print ("the file doesn't exist")
             return False
         try:
             already_tweeted = open(log_file, 'r').readlines()[tolerance:]
@@ -41,7 +42,9 @@ class Tweet():
         for line in already_tweeted:
             if line.strip() and line.split('\t')[2] == self.media:
                 # if element.strip() checks if line not blank
+                print("already tweeted")
                 return True
+        print ("not tweeted yet")
         return False
 
     def is_banned(self, banned_list):

@@ -107,15 +107,15 @@ def orders():
     relevant_mentions = requests.relevant_mentions(mentions, log, time)
 
     #print master_mentions
-    print relevant_mentions
+    print(relevant_mentions)
 
     for tweet in relevant_mentions:
         if requests.is_img_request(tweet, config.request_command):
             if requests.mentions_third_user(tweet):
-                print 'gift'
+                print('gift')
                 respond_to_gift_request(tweet)
             else:
-                print 'simple'
+                print('simple')
                 respond_to_simple_request(tweet)
 
     for tweet in master_mentions:

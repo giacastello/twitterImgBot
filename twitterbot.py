@@ -100,17 +100,22 @@ def orders():
     ban_command = config.ban_command
     master_account = config.master_account
     mentions = requests.mentions(config.bot_account, api)
+    # print mentions
 
     mentions = requests.mentions(config.bot_account, config.api)
     master_mentions = requests.master_mentions(mentions, log, master_account)
     relevant_mentions = requests.relevant_mentions(mentions, log, time)
 
+    #print master_mentions
+    print relevant_mentions
 
     for tweet in relevant_mentions:
         if requests.is_img_request(tweet, config.request_command):
             if requests.mentions_third_user(tweet):
+                print 'gift'
                 respond_to_gift_request(tweet)
             else:
+                print 'simple'
                 respond_to_simple_request(tweet)
 
     for tweet in master_mentions:

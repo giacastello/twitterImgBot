@@ -54,7 +54,9 @@ def is_delete_order(mention, master_account, ban_command):
 
 def is_img_request(mention, request_command):
     """Return True if mention start with the request_command."""
-    return mention.text.lower().startswith(request_command.lower())
+    #print mention.text.lower()
+    #return mention.text.lower().startswith(request_command.lower())
+    return (request_command.lower()) in mention.text.lower()
 
 
 def who_asks(mention):

@@ -7,10 +7,10 @@ token = 858831929289969664-D7iTQC0Bj2oz4ZTg7Q375wMDY0QVkXt
 secret_token = QMHA2p6KPB49GX4txsoiFPvGYHJ6hYjbFaW0Zi6W9xQcx
 
 [App]
-image_folder = /Users/silviaportalanza/Code/twitterImgBot/images
-execution_chance = 0
+image_folder = ../images
+execution_chance = 1
 allow_repeat_after = 1
-log_file = /Users/silviaportalanza/Code/twitterImgBot/logs/log
+log_file = ../logs/log
 bot_account = @storytool
 master_account = @storytool
 dont_tweet_file = '/dev/null'
@@ -19,7 +19,7 @@ dont_tweet_file = '/dev/null'
 #caps agnostic
 ban_command = adasdasddsadnansdasnasdnasdnasdnasdnadsn
 request_command = @storytool #prompt
-time_tolerance = 1000000
+time_tolerance = 10000
 
 [Texts]
 # Respect indentation: it is TWO spaces
@@ -28,7 +28,7 @@ time_tolerance = 1000000
 tweet_post_number = True
 tweet_this_text =
 
-request_answers = Aquí tienes tu pista.
+request_answers = Aqui tienes tu pista.
 #  answer2
 #  answer3
 #  ...

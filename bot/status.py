@@ -40,7 +40,7 @@ class Tweet():
         except IndexError:
             already_tweeted = open(log_file, 'r').readlines()
         for line in already_tweeted:
-            if line.strip() and line.split('\t')[2] == self.media:
+            if line.strip() and len(line.split('\t')) >= 2 and line.split('\t')[2] == self.media:
                 # if element.strip() checks if line not blank
                 print("already tweeted")
                 return True

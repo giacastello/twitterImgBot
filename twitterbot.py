@@ -6,6 +6,7 @@ from bot import requests
 from bot import timeline
 from logs import logger
 from logs import banner
+from apscheduler.schedulers.blocking import BlockingScheduler
 import random
 import argparse
 import sys
@@ -212,4 +213,6 @@ def main():
             logger.add_warning_to_log(post_number, warning, config.log_file)
 
 if __name__ == "__main__":
-    main()
+    scheduler = BlockingScheduler()
+    scheduler.add_job(main, 'interval', seconds=5)
+    scheduler.start()
